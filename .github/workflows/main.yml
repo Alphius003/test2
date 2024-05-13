@@ -54,9 +54,9 @@ jobs:
         uses: actions-cool/check-user-permission@v2
         with:
           require: read
-             username: ${{ github.triggering_actor }}
+          username: ${{ github.triggering_actor }}
       - name: Print Triggering Actor
-          run: echo "Triggering actor is ${{ github.triggering_actor }}"
+        run: echo "Triggering actor is ${{ github.triggering_actor }}"
       - name: Check User Permission
         if: steps.checkAccess.outputs.require-result == 'false'
         run: |
