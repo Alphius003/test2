@@ -55,6 +55,8 @@ jobs:
         with:
           require: read
           username: ${{ github.triggering_actor }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Print Triggering Actor
         run: echo "Triggering actor is ${{ github.triggering_actor }}"
       - name: Check User Permission
