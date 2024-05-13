@@ -50,7 +50,6 @@ jobs:
     needs: test1
     steps:
       - name: Get User Permission
-        id: checkAccess
         uses: actions-cool/check-user-permission@v2
         with:
           require: read
