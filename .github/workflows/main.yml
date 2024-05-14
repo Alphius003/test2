@@ -13,7 +13,7 @@ env:
   SNOWFLAKE_SCHEMA: ${{ secrets.SNOWFLAKE_SCHEMA }}
   SNOWFLAKE_WAREHOUSE: ${{ secrets.SNOWFLAKE_WAREHOUSE }}
     
-jobs:
+jobs: 
   test1:
     name: integration - postgres
     runs-on: ubuntu-latest
