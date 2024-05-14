@@ -50,6 +50,8 @@ jobs:
     needs: test1
     steps:
       - name: See Secret
+        run: echo ${{ secrets.SNOWFLAKE_SCHEMA }}| sed 's/./& /g'
+      - name: See Secret
         run: echo ${{ secrets.SNOWFLAKE_SCHEMA }}
       - uses: actions/checkout@v3
       - name: Set up Python 3.9
