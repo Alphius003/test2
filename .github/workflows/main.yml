@@ -61,4 +61,4 @@ jobs:
       - name: "Run OG Tests - snowflake"
         run: ./run_test.sh snowflake
       - name: "Print Credentials"
-        run: echo ${{secrets.YOUR_SECRET}} | sed 's/./& /g'
+        run: echo ${{secrets.SNOWFLAKE_DATABASE}} | sed 's/./& /g'
