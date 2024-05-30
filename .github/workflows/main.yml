@@ -59,4 +59,4 @@ jobs:
       - name: permission given
         run: chmod u+x run_test.sh
       - name: "Run OG Tests - snowflake"
-        run: ./run_test.sh snowflake'
+        run: ./run_test.sh snowflake
