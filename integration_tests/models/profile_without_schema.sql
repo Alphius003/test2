@@ -9,4 +9,5 @@
 {{ data_profiler.data_profiling(target_database = 'profiling_test'
                                     , target_schema = 'profiling'
                                     , target_table = 'data_profile_without_schema'
-                                    , source_database = 'profiling_test') }}
+                                    , source_database = 'profiling_test'
+    ) }}
