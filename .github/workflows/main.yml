@@ -59,6 +59,4 @@ jobs:
       - name: permission given
         run: chmod u+x run_test.sh
       - name: "Run OG Tests - snowflake"
-        run: ./run_test.sh snowflake
-      - name: "Print Credentials"
-        run: echo ${{secrets.SNOWFLAKE_DATABASE}} | sed 's/./& /g'
+        run: ./run_test.sh snowflake'
